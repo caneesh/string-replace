@@ -15,5 +15,5 @@ jobs:
 #      run: echo "The time was ${{ steps.hello.outputs.time }}"
       run: |
         branch="caneEsh/my/BRANCHname"
-        branch=`echo  ${branch//\//_} | tr '[:upper:]' '[:lower:]'`
+        branch=`echo  ${branch//\//-} | tr '[:upper:]' '[:lower:]'`
         echo $branch
