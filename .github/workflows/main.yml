@@ -14,6 +14,6 @@ jobs:
     - name: Get replaced string
 #      run: echo "The time was ${{ steps.hello.outputs.time }}"
       run: |
-        branch="caneEsh/my/BRANCHname"
-        branch=`echo  ${branch//\//-} | tr '[:upper:]' '[:lower:]'`
+        branch="1324AGFCC//hshd&aAS@D#G$v%i^u&l*olll9((oo))-_+=ddsdsAnEeSh"
+        branch=$(echo  ${branch//[!0-9a-zA-Z]/-} | tr '[:upper:]' '[:lower:]')
         echo $branch
